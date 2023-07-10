@@ -8,7 +8,18 @@ const mylist = [1,2,3,4,5,6]
 // rafc 등 arrow 추가해서 가능
 
 
-export default class Test extends Component {  // 화살표 함수 컴포넌트 예시
+// rfc가 간단하긴 함 대신 hook들 좀 사용해야 함
+// import React from 'react'
+
+// export default function test() {
+//   return (
+//     <div>test</div>
+//   )
+// }
+
+
+
+export default class Test extends Component {  // 클래스 컴포넌트 예시, 요즘은 잘 안씀
   render() {
     const item = mylist.map((product) =>{  // 화살표 함수 작성하고 {} 사용시 return 필요 /// react에서는 주로 map 사용
       return (

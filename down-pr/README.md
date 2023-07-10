@@ -31,6 +31,7 @@ ReactDOM.render(
 );
 ```
 
+* <React.StrictMode> 이 태그는 안에 있는 컴포넌트와 자손 컴포넌트까지 모두 위험상황 검사함. 디버깅 모드 아니면 무시되니까 무시해도 될듯?
 
 
 ## Available Scripts

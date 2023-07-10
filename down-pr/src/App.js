@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Test from './components/Test';
 import RefTest from './components/RefTest';
+import AxiosTest from './components/AxiosTest';
 
 
 function App() {
   return (
     <div className="App">
+      <AxiosTest />
       <Test />
       <RefTest />
       <header className="App-header">

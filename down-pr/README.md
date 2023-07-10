@@ -2,37 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 리액트 17.0.2로 다운그레이드 할거임
-
-* `npm install react@^17.0.2 react-dom@17.0.2`
-* 이후 npm start 불가
-  * index.js안에서 react-dom/client 파일을 못찾아 오류
-    * /client 제거, `import ReactDOM from 'react-dom';`으로 변경
-  * index.js에서 reactdom.creatroot는 버전 18 문법, 작동 안됨
-
-아래 코드를
-
-```javascript
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-
-아래 코드로 변경
-```javascript
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-```
-
-* <React.StrictMode> 이 태그는 안에 있는 컴포넌트와 자손 컴포넌트까지 모두 위험상황 검사함. 디버깅 모드 아니면 무시되니까 무시해도 될듯?
-
 
 ## Available Scripts
 

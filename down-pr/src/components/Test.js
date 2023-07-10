@@ -1,10 +1,3 @@
-import React from 'react'
-
-export default function Test() {
-  return (
-    <div>Test</div>
-  )
-}
 import React, { useState } from 'react'
 
 export default function Test() {
@@ -31,16 +24,16 @@ export default function Test() {
 
 
     // ...이 뭔지 모르겠어서 테스트용================================================
-    const testt = {a:1, b:2, c:3}
-    const aa = ()=>{
-        return {
-            ...testt,
-            d:3
-        }
-    }
-    const bb = ()=>{
-        console.log(aa());   
-    }
+    // const testt = {a:1, b:2, c:3}
+    // const aa = ()=>{
+    //     return {
+    //         ...testt,
+    //         d:3
+    //     }
+    // }
+    // const bb = ()=>{
+    //     console.log(aa());   
+    // }
     // =============================================================================
     const onChange = (e)=>{
         // 구조 분해 할당 이용
@@ -75,7 +68,7 @@ export default function Test() {
         <button onClick={decrease}>-1</button>
         <input type="text" name='first' onChange={onChange} value={first} placeholder='11'/>
         <input type="text" name='second' onChange={onChange} value={second} placeholder='22'/>
-        <button onClick={bb}>testtttttt</button>
+        {/* <button onClick={bb}>testtttttt</button> */}
         <h1>
             {first}
         </h1>

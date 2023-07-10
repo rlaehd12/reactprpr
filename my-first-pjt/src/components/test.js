@@ -8,7 +8,7 @@ const mylist = [1,2,3,4,5,6]
 // rafc 등 arrow 추가해서 가능
 
 
-// rfc가 간단하긴 함 대신 hook들 좀 사용해야 함
+// rfc가 간단하고 자주 씀 대신 hook들 좀 사용해야 함
 // import React from 'react'
 
 // export default function test() {

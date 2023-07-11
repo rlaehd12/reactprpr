@@ -8,6 +8,7 @@
   * 자바스크립트에서 class가 예약어여서 jsx에서 html class는 `<h1 className='내클래스'>제?목</h1>` 이런 식으로 사용
   * 중괄호`{}`로 자바스크립트 식을 감싸면 중괄호 안의 식을 평가해 결과값을 사용해야 한다는 뜻, 동적으로 데이터 제공 가능
   * jsx는 자바스크립트, 그래서 자바스크립트 함수 안에서 jsx 문법 사용 가능
+  
     ```jsx
     <ul>
       {props.ingredients.map((ingredient, i)=>{

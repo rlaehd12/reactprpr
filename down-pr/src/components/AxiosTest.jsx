@@ -12,7 +12,7 @@ export default function AxiosTest() {
 
   // strictmode 켜져있으면 요청 여러번 보냄, 버그 잡을라고 한다는데 이게 버그 그자체인데
   // resTest()  // 왜 2번?????? 값 바뀔때마다 실행되는데 미친듯
-  console.log('rendering...');
+  console.log('AxiosTest rerendering...');
 
   // 쓸데없는 에러 무시하는 코드
   // eslint-disable-next-line

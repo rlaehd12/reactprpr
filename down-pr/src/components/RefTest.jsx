@@ -8,7 +8,14 @@ export default function RefTest() {
     nickname:'',
   });
 
-  const nameInput = useRef()  // nameInput은 무언가를 가르키는 useRef객체
+  /*
+  let 대신 useRef 사용하는 이유!!!
+  useRef는 다시 렌더링 할때 값 재설정 하지 않음,
+  let은 다시 렌더링 될때 다시 할당됨, 비효율적, 혹은 없어질수도
+  */
+  const nameInput = useRef()  // nameInput은 무언가를 가르키는 useRef객체, 파라미터를 넣으면 .current에 기본값 설정
+  // 위에 비어있는 값 넣으면 undefined값이 기본값
+  // console.log(nameInput.current, 'nameinput current 값');
 
   const {nname, nickname} = inputs  // 구조분해 할당
 

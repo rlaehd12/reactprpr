@@ -3,11 +3,14 @@ import './App.css';
 import Test from './components/Test';
 import RefTest from './components/RefTest';
 import AxiosTest from './components/AxiosTest';
-
+import RenderingTest from './components/RenderingTest';
+import ListTest from './components/ListTest';
 
 function App() {
   return (
     <div className="App">
+      <ListTest />
+      <RenderingTest />
       <AxiosTest />
       <Test />
       <RefTest />

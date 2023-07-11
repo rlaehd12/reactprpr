@@ -1,6 +1,12 @@
 import React, { Component, useState } from 'react'
 import axios from 'axios'
 
+/* 
+// 종합
+https://policy.nl.go.kr/openapi/searchKwdApi.do?kwd=지원
+// 상세
+https://policy.nl.go.kr/openapi/searchDetailApi.do?rec_key=SH1_UMO20201110369
+*/
 
 export default function AxiosTest() {
 

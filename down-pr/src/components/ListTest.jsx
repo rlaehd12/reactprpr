@@ -15,7 +15,6 @@ export default function ListTest() {
     
     return () => {
       // unmount 될때
-      // 컴포넌트 리렌더링 할때 일단 unmount 하고 다시 mount함
       console.log('ListTest unmount!');
     }
   }, [])
@@ -23,15 +22,20 @@ export default function ListTest() {
   console.log(testdata, 'testdata');
   
   function axiosTest() {
-    console.log('Listtest axios start!');
+    setData('')
+    setData([{id:1}])
+    console.log('Listtest axios start!');  // 이 시점에서는 set하지 않아서 이전 데이터 출력됨
     axios({
       method:'get',
       url:`https://api.themoviedb.org/3/genre/movie/list?api_key=${TMDB_API_KEY}&language=ko`
     })
     .then((res)=>{
       // console.log(res.data.genres);
-      setData(res.data.genres)
+      setTimeout(() => {
+        setData(res.data.genres)
+      }, 500);
     })
+    setData([{id:5}])
   }
 
   // eslint-disable-next-line
@@ -44,11 +48,15 @@ export default function ListTest() {
       <div>ListTest</div>
       <button onClick={axiosTest}>List?</button>
 
-      {/* 타이밍 때문에 && 반드시 이거 필요 */}
-      {testdata &&
+      {/* 타이밍 때문에 && 반드시 이거 필요/ 데이터가 없을시 렌더링 막아야 함 */}
+      {testdata ?
       testdata.map((e)=>{
-        return <div key={e.id}>{e.name}</div>
-      })}
+        return (
+          <div key={e.id}> {e.name} {e.id} </div>
+        )
+      }): <h1>loading</h1>
+      }
+      <button type="button" className="btn btn-primary">Primary</button>
     </div>
   )
 }

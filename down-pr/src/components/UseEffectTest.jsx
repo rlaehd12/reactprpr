@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect } from "react";
 
 export default function UseEffectTest() {
-  return (
-    <div>UseEffectTest</div>
-  )
+  return <div>UseEffectTest</div>;
 }

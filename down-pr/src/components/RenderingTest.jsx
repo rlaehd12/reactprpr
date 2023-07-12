@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import {useRef, useEffect} from 'react';
 
 const RenderingTest = () => {
-  console.log('Rendering MyComponent');
+  console.log("Rendering MyComponent");
 
   const [count, setCount] = useState(0);
 
@@ -18,9 +18,7 @@ const RenderingTest = () => {
   );
 };
 
-export default RenderingTest
-
-
+export default RenderingTest;
 
 // ================================================ 함수 리렌더링 추적 훅
 
@@ -39,7 +37,7 @@ export default RenderingTest
 //       prev.current = props;
 //     });
 //   }
-  
+
 // // Usage
 // function MyComponent(props) {
 //   useTraceUpdate(props);

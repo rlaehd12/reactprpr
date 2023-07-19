@@ -5,10 +5,12 @@ import RefTest from './components/RefTest';
 import AxiosTest from './components/AxiosTest';
 import RenderingTest from './components/RenderingTest';
 import ListTest from './components/ListTest';
+import CalendarTest from './components/CalendarTest';
 
 function App() {
   return (
     <div className="App">
+      <CalendarTest />
       <ListTest />
       <RenderingTest />
       <AxiosTest />

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// 의존성 주입
 // ==============================
 import "bootstrap/dist/css/bootstrap.min.css";
 // ===============================
